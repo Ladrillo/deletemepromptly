@@ -7,6 +7,7 @@ const port = process.env.PORT || 4000
 
 app.use(express.json())
 app.use(helmet())
+app.use(express.static('client/build'))
 
 app.use((req, res) => {
   res.json('alive')
