@@ -14,6 +14,10 @@ app.use((req, res) => {
   res.json('alive')
 })
 
+app.get('/greeting', (req, res) => {
+  res.json('hello')
+})
+
 app.listen(port, () => {
   console.log(`listening on ${port}`);
 })
